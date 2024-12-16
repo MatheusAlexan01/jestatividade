@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "start": "electron ."
   },
   "author": "",
@@ -14,7 +14,8 @@
     "electron": "^31.0.0"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
-  },
-  "type": "module"
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+  
 }

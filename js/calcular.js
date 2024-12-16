@@ -12,7 +12,7 @@ function definirOperacao(op) {
     document.getElementById("input").value = "";
 }
 
-export function calcularResultado() {
+function calcularResultado() {
     valor2 = document.getElementById("input").value;
     let resultado;
     switch (operacao) {
@@ -40,3 +40,5 @@ function limparDisplay() {
     valor2 = "";
     operacao = "";
 }
+
+module.exports = { adicionarNumero, definirOperacao, limparDisplay, calcularResultado };
